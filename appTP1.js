@@ -1,13 +1,13 @@
 var express = require('express');
 var app = express();
 app.use(express.json())
-app.use(express.static(__dirname + '/public')); //__dir and not _dir
+app.use(express.static(__dirname + '/public')); 
 app.use(express.urlencoded({ extended: true }))
-var port = 8000; // you can use any port
+var port = 8000; 
 
 console.log('server on' + port);
 
-app.post('/index', (req, res) => {
+app.post('/', (req, res) => {
 
     var user = req.body.user
     var pass = req.body.pass
