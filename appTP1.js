@@ -11,7 +11,7 @@ app.post('/index', (req, res) => {
 
     var user = req.body.user
     var pass = req.body.pass
-    if (pass == "amine") {
+    if (pass == "Bouricha") {
         res.send('<h2> Felicitation vos information sont corrects   </h2>');
     }
     else {
